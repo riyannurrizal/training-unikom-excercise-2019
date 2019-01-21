@@ -3,6 +3,7 @@ package com.multipolar.bootcamp.spring.appecommerce.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
@@ -21,6 +22,7 @@ create table toko
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString(exclude = "daftarProduk")
 @Entity
 @Table(name = "toko")
 
